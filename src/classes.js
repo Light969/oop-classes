@@ -1,0 +1,136 @@
+class Character {
+  constructor(health, level, attack, defence) {
+    this.health = health;
+    this.level = level;
+    this.attack = attack;
+    this.defence = defence;
+  }
+}
+const person = new Character(0, 0, 0, 0);
+console.log(person);
+
+class Bowerman extends Character {
+  	constructor(name, type, health, level, attack, defence) {
+    super(health, level, attack, defence);
+    // name - строка, min - 2 символа, max - 10
+    if (typeof name === 'string' && name.length >= 2 && name.length <= 10) {
+      this.name = name;
+	  } else {
+      throw new Error('Имя должно содержать от 2х до 10 символов');
+	  }
+	  // type - один из типов (строка): Bowman, Swordsman, Magician, Daemon, Undead, Zombie
+
+    if (typeof type === 'string' && (type === 'Bowman' || type === 'Swordsman' || type === 'Magician' || type === 'Daemon' || type === 'Undead' || type === 'Zombie')) {
+      this.type = type;
+	  } else {
+      throw new Error('Тип героя должен быть: Boweman, Swordsman, Magician, Daemon, Undead, Zombie');
+	  }
+  }
+}
+const borowerman = new Bowerman('Mike', 'Bowerman', 100, 1, 25, 25);
+console.log(borowerman);
+
+class Swordsman extends Character {
+  	constructor(name, type, health, level, attack, defence) {
+    super(health, level, attack, defence);
+    // name - строка, min - 2 символа, max - 10
+    if (typeof name === 'string' && name.length >= 2 && name.length <= 10) {
+      this.name = name;
+	  } else {
+      throw new Error('Имя должно содержать от 2х до 10 символов');
+	  }
+	  // type - один из типов (строка): Bowman, Swordsman, Magician, Daemon, Undead, Zombie
+
+    if (typeof type === 'string' && (type === 'Bowman' || type === 'Swordsman' || type === 'Magician' || type === 'Daemon' || type === 'Undead' || type === 'Zombie')) {
+      this.type = type;
+	  } else {
+      throw new Error('Тип героя должен быть: Boweman, Swordsman, Magician, Daemon, Undead, Zombie');
+	  }
+  }
+}
+const swordsman = new Swordsman('Sergey', 'Swordsman', 100, 1, 40, 10);
+console.log(swordsman);
+
+class Magician extends Character {
+  	constructor(name, type, health, level, attack, defence) {
+    super(health, level, attack, defence);
+    // name - строка, min - 2 символа, max - 10
+    if (typeof name === 'string' && name.length >= 2 && name.length <= 10) {
+      this.name = name;
+	  } else {
+      throw new Error('Имя должно содержать от 2х до 10 символов');
+	  }
+	  // type - один из типов (строка): Bowman, Swordsman, Magician, Daemon, Undead, Zombie
+
+    if (typeof type === 'string' && (type === 'Bowman' || type === 'Swordsman' || type === 'Magician' || type === 'Daemon' || type === 'Undead' || type === 'Zombie')) {
+      this.type = type;
+	  } else {
+      throw new Error('Тип героя должен быть: Boweman, Swordsman, Magician, Daemon, Undead, Zombie');
+	  }
+  }
+}
+const magician = new Magician('Lesya', 'Magician', 100, 1, 10, 40);
+console.log(magician);
+
+class Daemon extends Character {
+  	constructor(name, type, health, level, attack, defence) {
+    super(health, level, attack, defence);
+    // name - строка, min - 2 символа, max - 10
+    if (typeof name === 'string' && name.length >= 2 && name.length <= 10) {
+      this.name = name;
+	  } else {
+      throw new Error('Имя должно содержать от 2х до 10 символов');
+	  }
+	  // type - один из типов (строка): Bowman, Swordsman, Magician, Daemon, Undead, Zombie
+
+    if (typeof type === 'string' && (type === 'Bowman' || type === 'Swordsman' || type === 'Magician' || type === 'Daemon' || type === 'Undead' || type === 'Zombie')) {
+      this.type = type;
+	  } else {
+      throw new Error('Тип героя должен быть: Boweman, Swordsman, Magician, Daemon, Undead, Zombie');
+	  }
+  }
+}
+const daemon = new Daemon('Sasha', 'Daemon', 100, 1, 10, 40);
+console.log(daemon);
+
+class Undead extends Character {
+  	constructor(name, type, health, level, attack, defence) {
+    super(health, level, attack, defence);
+    // name - строка, min - 2 символа, max - 10
+    if (typeof name === 'string' && name.length >= 2 && name.length <= 10) {
+      this.name = name;
+	  } else {
+      throw new Error('Имя должно содержать от 2х до 10 символов');
+	  }
+	  // type - один из типов (строка): Bowman, Swordsman, Magician, Daemon, Undead, Zombie
+
+    if (typeof type === 'string' && (type === 'Bowman' || type === 'Swordsman' || type === 'Magician' || type === 'Daemon' || type === 'Undead' || type === 'Zombie')) {
+      this.type = type;
+	  } else {
+      throw new Error('Тип героя должен быть: Boweman, Swordsman, Magician, Daemon, Undead, Zombie');
+	  }
+  }
+}
+const undead = new Undead('Tolya', 'Undead', 100, 1, 25, 25);
+console.log(undead);
+
+class Zombie extends Character {
+  	constructor(name, type, health, level, attack, defence) {
+    super(health, level, attack, defence);
+    // name - строка, min - 2 символа, max - 10
+    if (typeof name === 'string' && name.length >= 2 && name.length <= 10) {
+      this.name = name;
+	  } else {
+      throw new Error('Имя должно содержать от 2х до 10 символов');
+	  }
+	  // type - один из типов (строка): Bowman, Swordsman, Magician, Daemon, Undead, Zombie
+
+    if (typeof type === 'string' && (type === 'Bowman' || type === 'Swordsman' || type === 'Magician' || type === 'Daemon' || type === 'Undead' || type === 'Zombie')) {
+      this.type = type;
+	  } else {
+      throw new Error('Тип героя должен быть: Boweman, Swordsman, Magician, Daemon, Undead, Zombie');
+	  }
+  }
+}
+const zombie = new Zombie('Dmitry', 'Zombie', 100, 1, 40, 10);
+console.log(zombie);
