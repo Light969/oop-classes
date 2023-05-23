@@ -12,9 +12,6 @@
         "sourceType": "module"
     },
     "rules": {
-        // "indent": ["error", 2],
-        // "indent": ["space"],
-        // "indent": ["error", "tab"],
         "no-console": "off",
         "no-restricted-syntax": [
             "error",

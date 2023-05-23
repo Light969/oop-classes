@@ -1,5 +1,5 @@
 // import './js/app.js';
-import './js/Character';
+// import './js/Character';
 import Character from './js/Character';
 
 import Bowerman from './js/Bowerman';
