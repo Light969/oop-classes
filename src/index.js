@@ -1,3 +1,4 @@
+import './css/style.css';
 // import './js/app.js';
 // import './js/Character';
 import Character from './js/Character';
